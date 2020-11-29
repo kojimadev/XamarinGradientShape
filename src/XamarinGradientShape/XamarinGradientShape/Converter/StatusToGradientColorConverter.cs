@@ -14,11 +14,11 @@ namespace XamarinGradientShape.Converter
 			switch (status)
 			{
 				case Status.ToDo:
-					return GradientColor.DarkRed;
+					return GradientColor.LinerDarkRed;
 				case Status.Doing:
-					return GradientColor.DarkYellow;
+					return GradientColor.RadialYellowBrush;
 				case Status.Done:
-					return GradientColor.LightBlue;
+					return GradientColor.LinerLightBlue;
 				default:
 					throw new Exception("Invalid status");
 			}

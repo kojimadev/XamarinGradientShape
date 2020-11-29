@@ -13,26 +13,42 @@
 		/// <summary>
 		/// 線形 濃い赤グラデーション
 		/// </summary>
-		DarkRed,
+		LinerDarkRed,
 
 		/// <summary>
 		/// 線形 明るい青グラデーション
 		/// </summary>
-		LightBlue,
+		LinerLightBlue,
 
 		/// <summary>
 		/// 線形 濃い黄色グラデーション
 		/// </summary>
-		DarkYellow,
+		LinerDarkYellow,
 
 		/// <summary>
 		/// 線形 黒グラデーション
 		/// </summary>
-		Black,
+		LinerBlack,
 
 		/// <summary>
 		/// 線形 灰色グラデーション
 		/// </summary>
-		Gray,
+		LinerGray,
+
+		/// <summary>
+		/// 放射状 赤グラデーション
+		/// </summary>
+		RadialRedBrush,
+
+		/// <summary>
+		/// 放射状 青グラデーション
+		/// </summary>
+		RadialBlueBrush,
+
+		/// <summary>
+		/// 放射状 黄グラデーション
+		/// </summary>
+		RadialYellowBrush,
+
 	}
 }

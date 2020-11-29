@@ -8,6 +8,11 @@ namespace XamarinGradientShape.Utilities
 	public class GradientModel
 	{
 		/// <summary>
+		/// グラデーション形状のタイプ
+		/// </summary>
+		public ShaderType ShaderType { get; set; }
+
+		/// <summary>
 		/// グラデーションで使用する色
 		/// </summary>
 		public SKColor[] Colors { get; set; }
