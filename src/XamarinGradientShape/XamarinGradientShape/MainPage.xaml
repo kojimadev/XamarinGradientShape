@@ -1,0 +1,24 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:local="clr-namespace:XamarinGradientShape"
+             xmlns:controls="clr-namespace:XamarinGradientShape.Controls;assembly=XamarinGradientShape"
+             x:Class="XamarinGradientShape.MainPage">
+	<Grid>
+		<Grid.RowDefinitions>
+			<RowDefinition />
+			<RowDefinition />
+			<RowDefinition />
+			<RowDefinition />
+			<RowDefinition Height="0.5*"/>
+		</Grid.RowDefinitions>
+
+		<controls:GradientRect Grid.Row="0" BackGradientColor="{Binding Path=Status, Converter={StaticResource StatusToGradientColorConverter}, Mode=OneWay}" />
+		<controls:GradientRect Grid.Row="1" BackGradientColor="LightBlue" />
+		<!--CornerRadiusを設定すると角丸になる-->
+		<controls:GradientRect Grid.Row="2" BackGradientColor="DarkYellow" CornerRadius="30" />
+		<!--BorderColorとStrokeWidthを設定すると枠線も描画する-->
+		<controls:GradientRect Grid.Row="3" BackGradientColor="Black" BorderColor="DarkBlue" StrokeWidth="10" />
+		<Button Grid.Row="4" Text="バインドで値が変わる確認用ボタン" Clicked="Button_OnClicked" />
+	</Grid>
+</ContentPage>

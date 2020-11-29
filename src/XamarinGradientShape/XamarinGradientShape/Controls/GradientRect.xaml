@@ -1,0 +1,12 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<ContentView xmlns="http://xamarin.com/schemas/2014/forms" 
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:forms="clr-namespace:SkiaSharp.Views.Forms;assembly=SkiaSharp.Views.Forms"
+             x:Class="XamarinGradientShape.Controls.GradientRect"
+             HorizontalOptions="Fill" VerticalOptions="Fill">
+	<ContentView.Content>
+		<forms:SKCanvasView x:Name="_SkCanvasView" 
+		                    PaintSurface="SkCanvasView_OnPaintSurface"
+		                    HorizontalOptions="Fill" VerticalOptions="Fill"/>
+	</ContentView.Content>
+</ContentView>
